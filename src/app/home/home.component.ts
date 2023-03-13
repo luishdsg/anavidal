@@ -7,9 +7,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  about = false;
+  transition = false;
+  home = true;
+  constructor(
+
+  ) { }
 
   ngOnInit(): void {
   }
 
+  goPages(value: string): void {
+    if (value === 'about') {
+      this.transition = true;
+      setTimeout(() => {
+        this.home = false;
+        this.about = true;
+      }, 1000)
+      setTimeout(() => {
+        this.transition = false;
+      }, 2000)
+    }
+  }
 }

@@ -1,24 +1,48 @@
 <app-navbar></app-navbar>
-<main class="row">
-    <div class="col-12">
-        <div class="row mx-0">
-            <div class="col-12">
-                <div class="content">
-                    <div class="content__container">
-                      <p class="content__container__text">
-                        Hello
-                      </p>
-                      
-                      <ul class="content__container__list">
-                        <li class="content__container__list__item">world !</li>
-                        <li class="content__container__list__item">bob !</li>
-                        <li class="content__container__list__item">users !</li>
-                        <li class="content__container__list__item">everybody !</li>
-                      </ul>
-                    </div>
-                  </div>
-            </div>
+<app-transition class="z-100" *ngIf="transition"></app-transition>
+<main *ngIf="home" class="row mx-0">
+  <div class="col-12 pt-14 d-flex justify-content-center">
+    <div class="row container mx-0">
+      <div class="col-12">
+        <div class="content">
+          <div class="content__container">
+            <p class="content__container__text">
+              Capacitada para
+            </p>
+            <ul class="content__container__list">
+              <li class="color-yellow content__container__list__item">trabalhar!</li>
+              <li class="color-yellow content__container__list__item">ajudar !</li>
+              <li class="color-yellow content__container__list__item">colaborar !</li>
+              <li class="color-yellow content__container__list__item">construir !</li>
+            </ul>
+          </div>
         </div>
+      </div>
+      <div class="col-md-4">
+        <img src="../../assets/pix.svg" height="40" />
+        <div class="w-auto mt-5">
+          <h3 class="text-light h6 sam">"Quanto mais fortes forem suas provações maiores serão suas vitórias"</h3>
+          <p class="text-end text-light text-decoration-underline fst-italic">-By Abnyzia</p>
+        </div>
+      </div>
+      <div class="col-12 mt-5">
+        <div class="btn-about h-fit w-fit">
+          <a role="button" (click)="goPages('about')" class="button">
+            <div class="button__line"></div>
+            <div class="button__line"></div>
+            <span class="h5 button__text">Sobre mim</span>
+            <div class="button__drow1"></div>
+            <div class="button__drow2"></div>
+          </a>
+        </div>
+      </div>
     </div>
+  </div>
 </main>
-<app-footer></app-footer>
+<main *ngIf="about" class="row mx-0">
+  <div class="col-12 pt-14 d-flex justify-content-center">
+    <div class="row container mx-0">
+     <h1>jjjj</h1>
+    </div>
+  </div>
+</main>
