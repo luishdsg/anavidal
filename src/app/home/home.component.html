@@ -1,12 +1,11 @@
 <app-navbar></app-navbar>
-<app-transition class="z-100" *ngIf="transition"></app-transition>
-<main *ngIf="home" class="row mx-0">
+<main id="home" *ngIf="home" class="row mx-0">
   <div class="col-12 pt-14 d-flex justify-content-center">
     <div class="row container mx-0">
       <div class="col-12">
         <div class="content">
           <div class="content__container">
-            <p class="content__container__text">
+            <p class="content__container__text pt-3">
               Capacitada para
             </p>
             <ul class="content__container__list">
@@ -27,7 +26,7 @@
       </div>
       <div class="col-12 mt-5">
         <div class="btn-about h-fit w-fit">
-          <a role="button" (click)="goPages('about')" class="button">
+          <a role="button" (click)="goPages('about')" pageScroll href="#about"  class="button">
             <div class="button__line"></div>
             <div class="button__line"></div>
             <span class="h5 button__text">Sobre mim</span>
@@ -39,10 +38,5 @@
     </div>
   </div>
 </main>
-<main *ngIf="about" class="row mx-0">
-  <div class="col-12 pt-14 d-flex justify-content-center">
-    <div class="row container mx-0">
-     <h1>jjjj</h1>
-    </div>
-  </div>
-</main>
+<app-about></app-about>
+<app-formation></app-formation>

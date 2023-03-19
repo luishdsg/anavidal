@@ -6,18 +6,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from 'src/shared/navbar/navbar.component';
-import { TransitionComponent } from './home/components/transition/transition.component';
+import { AboutComponent } from './about/about.component';
+import { FormationComponent } from './formation/formation.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     NavbarComponent,
-    TransitionComponent,
+    AboutComponent,
+    FormationComponent,
   ],
   imports: [
     BrowserModule,
-    NgxPageScrollCoreModule.forRoot({duration: 1000}),
+    NgxPageScrollCoreModule.forRoot(),
     AppRoutingModule
   ],
   providers: [],

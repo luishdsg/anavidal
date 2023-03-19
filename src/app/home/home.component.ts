@@ -18,15 +18,6 @@ export class HomeComponent implements OnInit {
   }
 
   goPages(value: string): void {
-    if (value === 'about') {
-      this.transition = true;
-      setTimeout(() => {
-        this.home = false;
-        this.about = true;
-      }, 1000)
-      setTimeout(() => {
-        this.transition = false;
-      }, 2000)
-    }
+    
   }
 }
