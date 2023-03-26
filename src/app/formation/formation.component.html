@@ -48,7 +48,7 @@
                     <i class="text-light bi bi-filter-square"></i>
                   </div>
                   <div class="info pb-2">
-                    <div class="text-light main">
+                    <div class="text-light main rounded w3-black p-2">
                       PRAXIS Pesquisa <br />Desenvolvimento e Educação
                     </div>
                     <div class="sub h6 text-light">
@@ -69,9 +69,9 @@
                   <div class="icon pt-2 d-grid">
                     <i class="text-light bi bi-filetype-js"></i>
                   </div>
-                  <div class="info">
-                    <div class="text-dark main">Udemy</div>
-                    <div class="sub text-dark">JavaScript / 2021 - atual</div>
+                  <div class="info rounded w3-black p-4">
+                    <div class="text-light main">Udemy</div>
+                    <div class="sub text-light">JavaScript / 2021 - atual</div>
                   </div>
                 </div>
               </div>
@@ -86,9 +86,9 @@
                   <div class="icon pt-2">
                     <i class="text-light bi bi-microsoft"></i>
                   </div>
-                  <div class="info">
-                    <div class="text-dark main">Office 365</div>
-                    <div class="sub text-dark">
+                  <div class="info rounded w3-black p-4">
+                    <div class="text-light main">Office 365</div>
+                    <div class="sub text-light">
                       Word, Powerpoint, Excel... 2021 - atual
                     </div>
                   </div>
@@ -105,9 +105,9 @@
                   <div class="icon pt-2">
                     <i class="text-light bi bi-google"></i>
                   </div>
-                  <div class="info">
-                    <div class="text-dark main">Google Workspace</div>
-                    <div class="sub text-dark">
+                  <div class="info rounded w3-black p-4">
+                    <div class="text-light main">Google Workspace</div>
+                    <div class="sub text-light">
                       Gmail, Drive, Google forms... 2021 - atual
                     </div>
                   </div>
@@ -127,100 +127,146 @@
         </div>
       </div>
     </main>
-    <main class="row h-800">
-      <div class="col-12 py-5">
+    <main class="row mx-0 h-100"  style="min-height: 862px">
+      <div class="col-12 px-0 py-5">
         <div class="container">
           <div class="row">
             <div class="col-12 text-center">
-              <p id="skills" class="w-100 py-5 text-light display-4 text-center">
+              <p
+                id="skills"
+                class="w-100 py-5 text-light display-4 text-center"
+              >
                 Experiência
               </p>
             </div>
-            <div class="col-12 d-flex align-items-center justify-content-between">
-              <div class="card-hover"[ngClass]="{ 'fade-in': showDiv, 'fade-out': !showDiv }">
-                <div class="card-hover__content">
-                  <h3 class="card-hover__title text-light">
-                    Vendedora <span>Online</span> de roupas!
-                  </h3>
-                  <p class="card-hover__text h4 text-light mb-0">
-                    Minhas habilidades em comunicação, atendimento ao cliente e
-                    de mercado me permitiram identificar tendências e
-                    necessidades dos consumidores para oferecer produtos
-                    relevantes e atrativos.
-                  </p>
-                  <a role="button" class="card-hover__link">
-                    <span>Saiba mais</span>
-                    <svg fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor">
-                      <path stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
-                    </svg>
-                  </a>
+            <div
+              class="col-12"
+            >
+              <div class="row">
+                <div class="col-md mt-3 d-flex justify-content-center">
+                  <div
+                    class="card-hover"
+                    [ngClass]="{ 'fade-in': showDiv, 'fade-out': !showDiv }"
+                  >
+                    <div class="card-hover__content">
+                      <h3 class="card-hover__title text-light">
+                        Vendedora <span>Online</span> de roupas!
+                      </h3>
+                      <p class="card-hover__text h4 text-light mb-0">
+                        Minhas habilidades em comunicação, atendimento ao
+                        cliente e de mercado me permitiram identificar
+                        tendências e necessidades dos consumidores para oferecer
+                        produtos relevantes e atrativos.
+                      </p>
+                      <a role="button" class="card-hover__link">
+                        <span>Saiba mais</span>
+                        <svg
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                    <div class="card-hover__extra">
+                      <h4>
+                        Com <span>Lucros</span> acima dos <span>40%</span> desde
+                        2019!
+                      </h4>
+                    </div>
+                    <img
+                      class="bg-exp"
+                      src="../../assets/ecommerce.jpg"
+                      alt=""
+                    />
+                  </div>
                 </div>
-                <div class="card-hover__extra">
-                  <h4>
-                    Com <span>Lucros</span> acima dos <span>40%</span> desde 2019!
-                  </h4>
+                <div class="col-md mt-3 d-flex justify-content-center">
+                  <div
+                    class="card-hover"
+                    [ngClass]="{ 'fade-in': showDiv, 'fade-out': !showDiv }"
+                  >
+                    <div class="card-hover__content">
+                      <h3 class="card-hover__title text-light">
+                        <span>Estágio</span> Supervisionado
+                      </h3>
+                      <p class="card-hover__text h4 text-light mb-0">
+                        Escola 305 Sul - Asa Sul (BSB) Trabalhei na área de Psi
+                        coeducação de funcionários como assistencialista -
+                        auxiliando funcionários a trabalhar as emoções e estados
+                        que causam estresse, visando ensiná-los a manejar tal
+                        conduta como o burnout.
+                      </p>
+                      <a role="button" class="card-hover__link">
+                        <span>Saiba mais</span>
+                        <svg
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                    <div id="extra" class="card-hover__extra">
+                      <h4>
+                        (De <span class="color-yellow">Ago</span> a
+                        <span class="color-yellow">Nov</span> de
+                        <span class="color-yellow">2022</span>)
+                      </h4>
+                    </div>
+                    <img class="bg-exp" src="../../assets/school.jpg" alt="" />
+                  </div>
                 </div>
-                <img class="bg-exp" src="../../assets/ecommerce.jpg" alt="" />
-              </div>
-              <div class="card-hover"[ngClass]="{ 'fade-in': showDiv, 'fade-out': !showDiv }">
-                <div class="card-hover__content">
-                  <h3 class="card-hover__title text-light">
-                   <span>Estágio</span> Supervisionado
-                  </h3>
-                  <p class="card-hover__text h4 text-light mb-0">
-                    Escola 305 Sul - Asa Sul (BSB)
-                    Trabalhei na área de Psi coeducação de funcionários como assistencialista - auxiliando funcionários a trabalhar as emoções e estados que causam estresse, visando ensiná-los a manejar tal conduta como o burnout.
-                  </p>
-                  <a role="button" class="card-hover__link">
-                    <span>Saiba mais</span>
-                    <svg fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor">
-                      <path stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
-                    </svg>
-                  </a>
+                <div class="col-md mt-3 d-flex justify-content-center">
+                  <div
+                    class="card-hover"
+                    [ngClass]="{ 'fade-in': showDiv, 'fade-out': !showDiv }"
+                  >
+                    <div class="card-hover__content">
+                      <h3 class="card-hover__title text-light">
+                        Programadora Web <span>HTML,CSS e JS</span>
+                      </h3>
+                      <p class="card-hover__text h4 text-light mb-0">
+                        Criei, personalizei e automatizei páginas de sites e
+                        aplicações web com
+                        <span class="color-yellow"
+                          >VTEX ,html, css & Jquery</span
+                        >
+                      </p>
+                      <a role="button" class="card-hover__link">
+                        <span>Saiba mais</span>
+                        <svg
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                    <div id="extra2" class="card-hover__extra">
+                      <h4>(De <span>11/2022</span> a <span>03/2023</span>.)</h4>
+                    </div>
+                    <img class="bg-exp" src="../../assets/coder.jpg" alt="" />
+                  </div>
                 </div>
-                <div id="extra" class="card-hover__extra">
-                  <h4>
-                    (De <span class="color-yellow">Ago</span> a <span class="color-yellow">Nov</span> de <span class="color-yellow">2022</span>)
-                  </h4>
-                </div>
-                <img class="bg-exp" src="../../assets/school.jpg" alt="" />
-              </div>
-              <div class="card-hover"[ngClass]="{ 'fade-in': showDiv, 'fade-out': !showDiv }">
-                <div class="card-hover__content">
-                  <h3 class="card-hover__title text-light">
-                    Programadora Web <span>HTML,CSS e JS</span>
-                  </h3>
-                  <p class="card-hover__text h4 text-light mb-0">
-                    Criei, personalizei e automatizei páginas de sites e aplicações web com <span class="color-yellow">VTEX ,html, css & Jquery</span>
-                  </p>
-                  <a role="button" class="card-hover__link">
-                    <span>Saiba mais</span>
-                    <svg fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor">
-                      <path stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
-                    </svg>
-                  </a>
-                </div>
-                <div id="extra2" class="card-hover__extra">
-                  <h4>
-                    (De <span>11/2022</span> a <span>03/2023</span>.)
-                  </h4>
-                </div>
-                <img class="bg-exp" src="../../assets/coder.jpg" alt="" />
               </div>
             </div>
           </div>
