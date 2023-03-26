@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, HostListener, OnInit } from '@angular/core';
+
 
 @Component({
   selector: 'app-formation',
@@ -6,10 +7,24 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./formation.component.scss']
 })
 export class FormationComponent implements OnInit {
+  showDiv = false;
 
-  constructor() { }
+
+  constructor(private elementRef: ElementRef) {}
+
+  @HostListener('window:scroll', ['$event'])
 
   ngOnInit(): void {
+     const element = this.elementRef.nativeElement.querySelector('.card-hover');
+    const elementPosition = element.getBoundingClientRect().top;
+    const screenHeight = window.innerHeight;
+
+    if (elementPosition < screenHeight) {
+      this.showDiv = true;
+    } else {
+      this.showDiv = false;
+    }
+
     const options = document.getElementsByClassName("option");
     for (let i = 0; i < options.length; i++) {
       options[i].addEventListener("click", function () {

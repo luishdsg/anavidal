@@ -87,6 +87,9 @@
   .max-w-500{
     max-width: 500px;
   }
+  .max-w-350{
+    max-width: 350px;
+  }
 
   .z-10 {
     z-index: 10;
@@ -142,7 +145,15 @@
   .br-100 {
     border-radius: 10rem;
   }
+  .fade-in {
+    opacity: 1 !important;
+    top: 0 !important;
+  }
 
+  .fade-out {
+    opacity: 0 !important;
+    top: 100 !important;
+  }
   .line-19 {
     line-height: 19px;
   }
@@ -183,10 +194,10 @@
   }
 
   .bg-skills {
-    background-image: url(https://images.unsplash.com/photo-1550564566-7daf5919353c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEyfHx8ZW58MHx8fHw%3D&w=1000&q=80);
+    background-image: url(https://img.freepik.com/premium-photo/3d-modern-abstract-wallpaper-golden-lines-traingles-geometric-forms-black-background_216426-116.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: top;
   }
 
   // HOME
