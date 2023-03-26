@@ -286,7 +286,6 @@ sans-serif;
     align-items: center;
     text-decoration: none;
     color: var(--pattern);
-
     opacity: 0;
     padding: 10px;
     transition: all 0.35s;
@@ -328,6 +327,14 @@ sans-serif;
       color: var(--pattern);
 
     }
+  }
+
+  #extra {
+    height: 45% !important;
+  }
+
+  #extra2 {
+    height: 61% !important;
   }
 
   .bg-exp {
