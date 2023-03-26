@@ -1,6 +1,7 @@
-import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
+import { SwiperModule } from 'swiper/angular';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,16 +18,18 @@ import { ExperienceComponent } from './experience/experience.component';
     NavbarComponent,
     AboutComponent,
     FormationComponent,
-    ExperienceComponent,
+    ExperienceComponent
   ],
   imports: [
     BrowserModule,
+    SwiperModule,
     NgxPageScrollCoreModule.forRoot(),
     AppRoutingModule
   ],
   providers: [],
   schemas:[
-    CUSTOM_ELEMENTS_SCHEMA
+    CUSTOM_ELEMENTS_SCHEMA,
+    NO_ERRORS_SCHEMA
   ],
   bootstrap: [AppComponent]
 })
