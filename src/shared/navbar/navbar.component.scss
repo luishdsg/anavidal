@@ -1,181 +1,166 @@
 .a {
-    color: inherit;
-    text-decoration: none;
-  }
+  color: inherit;
+  text-decoration: none;
+}
 
-  .a {
-    background:
-      linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0),
-        rgb(255, 255, 255)
-      ),
-      linear-gradient(
-        to right,
-        #00000000,
-        #af781e,
-        #d5a353,
+.a {
+  background:
+    linear-gradient(to right,
+      rgba(0, 0, 0, 0),
+      rgb(255, 255, 255)),
+    linear-gradient(to right,
+      #00000000,
+      #af781e,
+      #d5a353,
 
 
     );
-    background-size: 100% 3px, 0 3px;
-    background-position: 100% 100%, 0 100%;
-    background-repeat: no-repeat;
-    transition: background-size 300ms;
-  }
-
-  .a:hover {
-    background-size: 0 3px, 100% 3px;
-  }
-
-// contact
-
-.carde {
-  background-color: #fff;
-  max-width: 360px;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  border-radius: 2rem;
-  box-shadow: 0px 1rem 1.5rem rgba(0,0,0,0.5);
-}
-.carde .banner {
-  background-image: url("https://images.unsplash.com/photo-1545703549-7bdb1d01b734?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ");
-  background-position: center;
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 11rem;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  box-sizing: border-box;
+  transition: background-size 300ms;
 }
-.carde .banner svg {
-  background-color: #fff;
-  width: 8rem;
-  height: 8rem;
-  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.3);
-  border-radius: 50%;
-  transform: translateY(50%);
-  transition: transform 200ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
+
+.a:hover {
+  background-size: 0 3px, 100% 3px;
 }
-.carde .banner svg:hover {
-  transform: translateY(50%) scale(1.3);
+
+.modal-content {
+  height: 100% !important;
 }
-.carde .menu {
-  width: 100%;
-  height: 5.5rem;
-  padding: 1rem;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-end;
-  position: relative;
-  box-sizing: border-box;
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    margin-right: auto;
+    margin-left: auto;
+    height: 90%;
+  }
 }
-.carde .menu .opener {
-  width: 2.5rem;
-  height: 2.5rem;
-  position: relative;
-  border-radius: 50%;
-  transition: background-color 100ms ease-in-out;
+
+.left {
+  left: 25px;
 }
-.carde .menu .opener:hover {
-  background-color: #f2f2f2;
+
+.right {
+  right: 25px;
 }
-.carde .menu .opener span {
-  background-color: #404040;
-  width: 0.4rem;
-  height: 0.4rem;
+
+.center {
+  text-align: center;
+}
+
+.bottom {
   position: absolute;
-  top: 0;
-  left: calc(50% - 0.2rem);
-  border-radius: 50%;
+  bottom: 25px;
 }
-.carde .menu .opener span:nth-child(1) {
-  top: 0.45rem;
-}
-.carde .menu .opener span:nth-child(2) {
-  top: 1.05rem;
-}
-.carde .menu .opener span:nth-child(3) {
-  top: 1.65rem;
-}
-.carde h2.name {
-  text-align: center;
-  padding: 0 2rem 0.5rem;
-  margin: 0;
-}
-.carde .title {
-  color: #a0a0a0;
-  font-size: 0.85rem;
-  text-align: center;
-  padding: 0 2rem 1.2rem;
-}
-.carde .actions {
-  padding: 0 2rem 1.2rem;
-  display: flex;
-  flex-direction: column;
-  order: 99;
-}
-.carde .actions .follow-info {
-  padding: 0 0 1rem;
-  display: flex;
-}
-.carde .actions .follow-info h2 {
-  text-align: center;
-  width: 50%;
-  margin: 0;
-  box-sizing: border-box;
-}
-.carde .actions .follow-info h2 a {
-  text-decoration: none;
-  padding: 0.8rem;
-  display: flex;
-  flex-direction: column;
-  border-radius: 0.8rem;
-  transition: background-color 100ms ease-in-out;
-}
-.carde .actions .follow-info h2 a span {
-  color: #1c9eff;
-  font-weight: bold;
-  transform-origin: bottom;
-  transform: scaleY(1.3);
-  transition: color 100ms ease-in-out;
-}
-.carde .actions .follow-info h2 a small {
-  color: #afafaf;
-  font-size: 0.85rem;
-  font-weight: normal;
-}
-.carde .actions .follow-info h2 a:hover {
-  background-color: #f2f2f2;
-}
-.carde .actions .follow-info h2 a:hover span {
-  color: #007ad6;
-}
-.carde .actions .follow-btn button {
-  color: inherit;
-  font: inherit;
-  font-weight: bold;
-  background-color: #ffd01a;
+
+#gradient {
+  background: #999955;
+  background-image: linear-gradient(#DAB046 20%, #D73B25 20%, #D73B25 40%, #C71B25 40%, #C71B25 60%, #961A39 60%, #961A39 80%, #601035 80%);
+  margin: 0 auto;
   width: 100%;
-  border: none;
-  padding: 1rem;
-  outline: none;
-  box-sizing: border-box;
-  border-radius: 1.5rem/50%;
-  transition: background-color 100ms ease-in-out, transform 200ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
+  height: 150px;
 }
-.carde .actions .follow-btn button:hover {
-  background-color: #efb10a;
-  transform: scale(1.1);
+
+#gradient:after {
+  content: "";
+  position: absolute;
+  background: #E9E2D0;
+  left: 50%;
+  margin-top: -67.5px;
+  margin-left: -264px;
+  padding-left: 20px;
+  border-radius: 20px;
+  max-width: 520px;
+  height: 275px;
+  width: 100%;
+  z-index: -1;
 }
-.carde .actions .follow-btn button:active {
-  background-color: #e8a200;
-  transform: scale(1);
+
+#card {
+  /* position: absolute; */
+  max-width: 450px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 244px;
+  border-radius: 20px;
+  padding: 25px;
+  /* padding-top: 0; */
+  /* padding-bottom: 0; */
+
+  /* margin-left: -250px; */
+  background-color: #212529; border: 1px solid var(--pattern);
+  box-shadow: -20px 0 35px -25px black, 20px 0 35px -25px black;
+  z-index: 5;
 }
-.carde .desc {
-  text-align: justify;
-  padding: 0 2rem 2.5rem;
-  order: 100;
+
+#card img {
+  width: 150px;
+  float: left;
+  border-radius: 5px;
+  margin-right: 20px;
+  -webkit-filter: sepia(1);
+  -moz-filter: sepia(1);
+  filter: sepia(1);
+}
+
+#card h2 {
+  font-family: courier;
+  color: #333;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 15pt;
+}
+
+#card p {
+  font-family: courier;
+  color: #555;
+  font-size: 13px;
+}
+
+#card span {
+  font-family: courier;
+}
+
+.total {
+  position: fixed;
+  width: 100%;
+  backdrop-filter: blur(42px);
+  height: 100%;
+  z-index: 10000;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.bodys {
+  display: flex;
+  outline: dashed 1px black;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+}
+
+
+@media(max-width: 520px) {
+
+  #gradient:after {
+    content: "";
+    position: absolute;
+    background: #E9E2D0;
+    left: 0;
+    margin-top: -67.5px;
+    margin-left: 0;
+    padding-left: 20px;
+    border-radius: 5px;
+    max-width: 520px;
+    height: 275px;
+    width: 100%;
+    z-index: -1;
+  }
 }

@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { AcademicComponent } from 'src/app/academic/academic.component';
 
 @Component({
   selector: 'app-navbar',
@@ -8,7 +7,7 @@ import { AcademicComponent } from 'src/app/academic/academic.component';
 })
 export class NavbarComponent implements OnInit {
   iconTime: string;
-  txtTime: string;
+  txtTime: string;modalmobileacademic = false;
   constructor(
 
   ) { }
@@ -33,6 +32,8 @@ export class NavbarComponent implements OnInit {
       this.iconTime = "🌙";
     }
   }
-
+  academic(){
+    this.modalmobileacademic = !this.modalmobileacademic;
+  }
 
 }
